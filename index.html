@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raja Behera | UX Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            neon: {
+              green: '#2cff05',
+              purple: '#bf00ff',
+            },
+            dark: {
+              bg: '#000000',
+              accent: '#2d2d2d',
+            },
+            light: {
+              bg: '#f3f4f6',
+              accent: '#e5e7eb',
+              text: '#111827'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Orbitron', 'sans-serif'],
+          },
+          boxShadow: {
+            'neon-green': '0 0 10px #2cff05, 0 0 20px #2cff05',
+            'neon-purple': '0 0 10px #bf00ff, 0 0 20px #bf00ff',
+            'orb-glow': '0 0 50px rgba(191, 0, 255, 0.3), 0 0 100px rgba(44, 255, 5, 0.1)',
+          },
+          animation: {
+            'spin-slow': 'spin 8s linear infinite',
+            'spin-reverse-slow': 'spin-reverse 10s linear infinite',
+            'pulse-fast': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'width-expand': 'width-expand 2s ease-out forwards',
+          },
+          keyframes: {
+            'spin-reverse': {
+              '0%': { transform: 'rotate(0deg)' },
+              '100%': { transform: 'rotate(-360deg)' },
+            },
+            'float': {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            'width-expand': {
+              '0%': { width: '0%' },
+              '100%': { width: '100%' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      @apply bg-light-bg text-light-text dark:bg-black dark:text-white transition-colors duration-300;
+      overflow-x: hidden;
+      cursor: none;
+      /* Hide default cursor */
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      @apply bg-gray-200 dark:bg-black;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      @apply bg-gray-400 dark:bg-[#2d2d2d];
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2cff05;
+    }
+
+    .tf {
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    /* Ensure links and buttons show pointer cursor logic via our custom component */
+    a,
+    button,
+    input,
+    textarea {
+      cursor: none;
+    }
+  </style>
+
+  <link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-B-2x9qPr.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
