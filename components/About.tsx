@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Reveal from './Reveal';
+import UXEngineerSkills from './Skills';
 
 interface AboutProps {
   id?: string;
@@ -133,7 +134,7 @@ const About: React.FC<AboutProps> = ({ id }) => {
           <div className="pt-8 grid grid-cols-2 gap-8 border-t border-black/10 dark:border-white/10 transition-colors">
             <div>
               <span className="block text-4xl font-display font-bold text-gray-900 dark:text-white mb-2 transition-colors">
-                <CountUp end={7} suffix="+" />
+                <CountUp end={8} suffix="+" />
               </span>
               <span className="text-sm text-gray-500 uppercase tracking-widest">Years Experience</span>
             </div>
@@ -151,23 +152,23 @@ const About: React.FC<AboutProps> = ({ id }) => {
       <div className="w-full md:w-1/2 flex flex-col gap-8">
         
         {/* Photo Placeholder */}
-        <Reveal delay={300} width="100%">
+        {/* <Reveal delay={300} width="100%">
           <div className="relative w-full h-[300px] bg-gray-100 dark:bg-[#0a0a0a] border border-gray-200 dark:border-dark-accent rounded-lg overflow-hidden group transition-colors">
-             {/* Decor */}
+            
              <div className="absolute top-4 left-4 w-8 h-8 border-t border-l border-neon-green z-20"></div>
              <div className="absolute bottom-4 right-4 w-8 h-8 border-b border-r border-neon-purple z-20"></div>
              
-             {/* Actual Image Logic */}
+             
              <div className="absolute inset-2 bg-white dark:bg-gray-900 flex items-center justify-center overflow-hidden transition-colors">
                
-               {/* Fallback Text */}
+               
                <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-gray-300 dark:text-gray-700 font-display text-4xl font-bold uppercase opacity-60 group-hover:opacity-90 transition-opacity">
                     <img src="/images/RB.png" alt="Raja Behera"  />
                   </span>
                </div>
 
-               {/* Real Image */}
+            
                <img 
                  src="/images/profile.jpg" 
                  alt="Raja Behera" 
@@ -175,15 +176,16 @@ const About: React.FC<AboutProps> = ({ id }) => {
                  onError={() => setImageError(true)}
                />
                
-               {/* Scanline Overlay */}
+              
                <div className="absolute inset-0 z-20 bg-gradient-to-b from-transparent via-black/5 dark:via-white/5 to-transparent h-[200%] w-full animate-[scan_4s_linear_infinite] pointer-events-none" />
              </div>
           </div>
-        </Reveal>
+        </Reveal> */}
 
         {/* Skills System */}
         <Reveal delay={500} width="100%">
-          <div className="bg-white/50 dark:bg-black/40 backdrop-blur-md border border-gray-200 dark:border-dark-accent p-8 relative overflow-hidden transition-colors shadow-sm dark:shadow-none">
+          <UXEngineerSkills/>
+          {/* <div className="bg-white/50 dark:bg-black/40 backdrop-blur-md border border-gray-200 dark:border-dark-accent p-8 relative overflow-hidden transition-colors shadow-sm dark:shadow-none">
             <h3 className="text-xl font-display tracking-widest text-gray-900 dark:text-white mb-8 border-b border-black/5 dark:border-white/10 pb-4 flex justify-between">
               <span>SYSTEM PARAMETERS</span>
               <span className="text-neon-green text-xs animate-pulse">● LIVE</span>
@@ -200,7 +202,7 @@ const About: React.FC<AboutProps> = ({ id }) => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </Reveal>
       </div>
     </section>

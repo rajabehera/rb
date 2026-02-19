@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import TechOrb from './TechOrb';
 import Reveal from './Reveal';
@@ -9,6 +9,19 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ onNavigate, id }) => {
+  const [latency, setLatency] = useState(12);
+
+  useEffect(() => {
+    // Simulate real-time latency updates
+    const interval = setInterval(() => {
+      // Generate realistic latency between 8-25ms
+      const newLatency = Math.floor(Math.random() * 18) + 8;
+      setLatency(newLatency);
+    }, 2000); // Update every 2 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -92,7 +105,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate, id }) => {
              <div className="h-8 w-[1px] bg-gray-300 dark:bg-dark-accent"></div>
              <div className="flex flex-col gap-1">
                <span className="text-[10px] uppercase text-gray-500 dark:text-gray-600 tracking-widest">Latency</span>
-               <span className="text-xs font-mono text-gray-400">12ms</span>
+               <span className="text-xs font-mono text-gray-400">{latency}ms</span>
              </div>
           </div>
         </Reveal>

@@ -271,9 +271,9 @@ export const projects: Project[] = [
     year: "2023",
     client: "SeaTrans Agencies",
     tech: ["HTML", "Bootstrap", "JavaScript"],
-    color: "border-blue-700",
-    accentColor: "text-blue-700",
-    secondaryColor: "bg-slate-700",
+    color: "border-orange-700",
+    accentColor: "text-orange-700",
+    secondaryColor: "bg-black-700",
     description: "A professional corporate portal for a global logistics and shipping company, designed to instill trust and provide easy access to complex logistical services.",
     challenge: "The shipping industry relies on trust and precision. The client's previous site was outdated and non-responsive, failing to communicate their global reach to international B2B partners.",
     solution: "We developed a robust, corporate-grade responsive website. Key focuses were on multilingual support capability, clear service categorization, and a professional 'Blue-Ocean' design language that screams reliability.",
@@ -328,10 +328,10 @@ export const projects: Project[] = [
       status: "Enterprise Live"
     },
     gallery: [
-      { caption: "Global Map" },
-      { caption: "Service Mega-Menu" },
-      { caption: "Tracking Portal" },
-      { caption: "Mobile View" }
+      { caption: "Global Map", url: "/images/st1.png"  },
+      { caption: "Service Mega-Menu", url: "/images/st2.png"  },
+      { caption: "Tracking Portal", url: "/images/st3.png"  },
+      { caption: "Mobile View", url: "/images/st4.png"  }
     ],
     font:"",
   },
@@ -343,9 +343,9 @@ export const projects: Project[] = [
     year: "Aug 2023",
     client: "Sudrives Pvt. Ltd.",
     tech: ["Figma", "Prototyping", "User Research", "Wireframing"],
-    color: "border-orange-500",
-    accentColor: "text-orange-500",
-    secondaryColor: "bg-orange-200",
+    color: "border-red-500",
+    accentColor: "text-blue-900",
+    secondaryColor: "bg-red-500",
     description: "The SuDrives Partner App is a comprehensive digital solution designed to transform ride management for drivers and partners in the transportation ecosystem.",
     challenge: "Drivers and partners needed a streamlined solution to manage rides efficiently, track earnings, and maintain operational flexibility while navigating the complexities of modern ride-hailing services.",
     solution: "A user-centric mobile application that integrates ride creation, history management, wallet transactions, and real-time status tracking into one cohesive, intuitive platform.",
@@ -400,10 +400,10 @@ export const projects: Project[] = [
       status: "Released v2.0"
     },
     gallery: [
-      { caption: "Driver Dashboard" },
-      { caption: "Earning Wallet" },
-      { caption: "Ride Request" },
-      { caption: "Map Navigation" }
+      { caption: "Boarding",url:"/images/sd1.png" },
+      { caption: "Map Navigation",url:"/images/sd2.png" },
+      { caption: "Ride Request",url:"/images/sd3.png" },
+      { caption: "Custom Ride",url:"/images/sd4.png" }
     ],
     font:"",
   },
@@ -416,8 +416,8 @@ export const projects: Project[] = [
     client: "Sudrives Pvt. Ltd.",
     tech: ["Figma", "User Research", "Prototyping"],
     color: "border-blue-400",
-    accentColor: "text-blue-400",
-    secondaryColor: "bg-blue-100",
+    accentColor: "text-blue-700",
+    secondaryColor: "bg-red-700",
     description: "The SuDrives User App is a sophisticated and user-friendly platform designed to provide customers with an exceptional ride-hailing experience through advanced technology and a customer-centric approach.",
     challenge: "Customers needed a streamlined, reliable platform to book rides effortlessly, track their trips in real-time, and manage payments seamlessly while ensuring safety and transparency throughout the journey.",
     solution: "A comprehensive mobile application that integrates ride booking, real-time tracking, secure payment processing, and profile management into one intuitive, customer-focused platform.",
@@ -472,10 +472,10 @@ export const projects: Project[] = [
       status: "Live"
     },
     gallery: [
-      { caption: "Home & Booking" },
-      { caption: "Live Tracking" },
-      { caption: "Payment Gate" },
-      { caption: "Ride History" }
+      { caption: "Menu & Ride History",url:"/images/sdu1.png" },
+      { caption: "OnBoarding",url:"/images/sdu2.png" },
+      { caption: "Ride History",url:"/images/sdu3.png" },
+      { caption: "Support",url:"/images/sdu4.png" }
     ],
     font:"",
   },
@@ -489,7 +489,7 @@ export const projects: Project[] = [
     tech: ["Figma","User Research","Protoyping"],
     color: "border-indigo-500",
     accentColor: "text-indigo-500",
-    secondaryColor: "bg-slate-700",
+    secondaryColor: "bg-slate-400",
     description: "An enterprise-grade procurement dashboard designed to centralize vendor management, RFQ lifecycles, and financial tracking in a unified interface.",
     challenge: "Procurement teams faced inefficiencies tracking vendor compliance, RFQ deadlines, and payment dues across disparate systems, leading to delayed orders.",
     solution: "We engineered a modular dashboard featuring real-time vendor status cards, an interactive RFQ tracking table, and immediate financial visibility for due balances.",
@@ -544,10 +544,10 @@ export const projects: Project[] = [
       status: "Enterprise Beta"
     },
     gallery: [
-      { caption: "Main Dashboard" },
-      { caption: "Vendor Table" },
-      { caption: "RFQ Details" },
-      { caption: "Analytics View" }
+      { caption: "RFQ Dashboard" ,url:"/images/opti1.png"},
+      { caption: "Live Auctions"  ,url:"/images/opti2.png"},
+      { caption: "Main Dashboard"  ,url:"/images/opti3.png"},
+      { caption: "Create Bid"  ,url:"/images/opti4.png"}
     ],
     font:"",
   },
@@ -559,9 +559,9 @@ export const projects: Project[] = [
     year: "2023",
     client: "PickTailor Inc.",
     tech: ["Figma","User Research", "Prototyping"],
-    color: "border-rose-500",
-    accentColor: "text-rose-500",
-    secondaryColor: "bg-orange-300",
+    color: "border-black-500",
+    accentColor: "text-black-500",
+    secondaryColor: "bg-red-700",
     description: "A simplified cash flow management solution enabling retailers to track daily transactions, payment modes, and net balances on the go.",
     challenge: "Small business owners struggled to reconcile daily accounts across various payment methods (Cash, UPI, Card, OD) without complex accounting software.",
     solution: "A mobile-first 'Cash Counter' module providing visual breakdowns of daily income vs expenses, with intuitive date filtering and net balance calculation.",
@@ -616,10 +616,10 @@ export const projects: Project[] = [
       status: "Market Ready"
     },
     gallery: [
-      { caption: "Cash Counter" },
-      { caption: "Payment Modes" },
-      { caption: "Analytics Chart" },
-      { caption: "Date Filter" }
+      { caption: "Custom Design"  ,url:"/images/Pickta1.png"},
+      { caption: "Bill Amount Details",url:"/images/Pickta2.png" },
+      { caption: "Employee Expenses" ,url:"/images/Pickta3.png"},
+      { caption: "Cash Counter",url:"/images/Pickta4.png" }
     ],
     font:"",
   }
