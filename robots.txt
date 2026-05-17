@@ -1,0 +1,13 @@
+# robots.txt for https://rajabehera.in
+# Generated for Raja Behera — UX Engineer Portfolio
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://rajabehera.in/sitemap.xml
+
+# Block access to any admin or private directories (add more as needed)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /drafts/
