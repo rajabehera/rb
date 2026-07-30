@@ -10,7 +10,7 @@ interface NotFoundProps {
 const NotFound: React.FC<NotFoundProps> = ({ onReturn }) => {
   return (
     <div className="min-h-screen w-full  flex flex-col items-center justify-center p-6 bg-black text-white relative overflow-hidden">
-      
+
       {/* Background Glitch Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-red-500/20 animate-pulse"></div>
@@ -18,17 +18,15 @@ const NotFound: React.FC<NotFoundProps> = ({ onReturn }) => {
         <div className="absolute top-1/2 left-0 w-full h-px bg-red-500/10 -translate-y-1/2"></div>
       </div>
 
-      <div className="w-full max-w-[1440px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-        
-        {/* Text Content */}
-        <div className="text-left space-y-6">
+<div className="w-full max-w-[1440px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 lg:translate-x-8">        {/* Text Content */}
+        <div className="text-left space-y-6 lg:pl-8 xl:pl-12">
           <Reveal>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-red-900 bg-red-900/10 text-red-500 text-xs font-mono uppercase tracking-widest mb-4">
               <AlertTriangle size={14} />
               <span>404 Error // Signal Lost</span>
             </div>
           </Reveal>
-          
+
           <Reveal delay={100}>
             <h1 className="text-6xl md:text-8xl font-display font-bold text-white leading-none">
               SYSTEM <br />
@@ -44,7 +42,7 @@ const NotFound: React.FC<NotFoundProps> = ({ onReturn }) => {
 
           <Reveal delay={300}>
             <div className="pt-4">
-              <button 
+              <button
                 onClick={onReturn}
                 className="group flex items-center gap-3 text-white font-display uppercase tracking-widest hover:text-neon-green transition-colors"
               >
@@ -59,13 +57,13 @@ const NotFound: React.FC<NotFoundProps> = ({ onReturn }) => {
 
         {/* Game Container */}
         <Reveal delay={400} className="w-full flex justify-center mx-auto">
-            <SnakeGame />
+          <SnakeGame />
         </Reveal>
       </div>
-      
+
       {/* Footer System Code */}
       <div className="absolute bottom-8 text-center w-full">
-         <p className="font-mono text-xs text-gray-800">ERR_CODE: 0x0000404 // MEMORY_DUMP_INITIATED</p>
+        <p className="font-mono text-xs text-gray-800">ERR_CODE: 0x0000404 // MEMORY_DUMP_INITIATED</p>
       </div>
     </div>
   );

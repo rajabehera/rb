@@ -1,14 +1,54 @@
 import { useState, useEffect } from "react";
 
 const skills = [
-  { name: "UX Strategy", category: "RESEARCH", accent: "#00FFB2", years: "8y" },
-  { name: "UI Design", category: "VISUAL", accent: "#BF5FFF", years: "8y" },
-  { name: "Interaction Design", category: "BEHAVIOR", accent: "#FF5FA0", years: "6y" },
-  { name: "Frontend Dev", category: "CODE", accent: "#5FA8FF", years: "8y" },
-  { name: "Design Systems", category: "ARCHITECTURE", accent: "#FFB800", years: "6y" },
-  { name: "Motion Design", category: "ANIMATION", accent: "#FF6B35", years: "4y" },
-  { name: "Prototyping", category: "TOOLING", accent: "#00D4FF", years: "8y" },
-  { name: "Accessibility", category: "INCLUSION", accent: "#7FFF00", years: "6y" },
+  {
+    name: "Product Strategy",
+    category: "STRATEGY",
+    accent: "#00FFB2",
+    level: "Advanced",
+  },
+  {
+    name: "UX Research",
+    category: "RESEARCH",
+    accent: "#BF5FFF",
+    level: "Advanced",
+  },
+  {
+    name: "Interaction Design",
+    category: "UX",
+    accent: "#FF5FA0",
+    level: "Expert",
+  },
+  {
+    name: "UI Design",
+    category: "VISUAL",
+    accent: "#5FA8FF",
+    level: "Expert",
+  },
+  {
+    name: "Design Systems",
+    category: "SYSTEMS",
+    accent: "#FFB800",
+    level: "Advanced",
+  },
+  {
+    name: "Frontend Engineering",
+    category: "REACT",
+    accent: "#FF6B35",
+    level: "Expert",
+  },
+  {
+    name: "Prototyping",
+    category: "FIGMA",
+    accent: "#00D4FF",
+    level: "Expert",
+  },
+  {
+    name: "Accessibility",
+    category: "WCAG",
+    accent: "#7FFF00",
+    level: "Advanced",
+  },
 ];
 
 const tools = ["Figma", "Framer", "React", "TypeScript", "Tailwind", "After Effects", "Webflow", "Storybook"];
@@ -86,21 +126,7 @@ function SkillTag({ skill, index, isVisible }: { skill: typeof skills[0]; index:
       </div>
 
       {/* Years badge - bottom right */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "10px",
-          right: "12px",
-          fontFamily: "'Space Mono', monospace",
-          fontSize: "9px",
-          color: skill.accent,
-          opacity: hovered ? 0.9 : 0.35,
-          transition: "opacity 0.25s ease",
-          letterSpacing: "0.05em",
-        }}
-      >
-        {skill.years}
-      </div>
+     
     </div>
   );
 }
@@ -181,7 +207,7 @@ export default function UXEngineerSkills() {
             lineHeight: 1,
             marginBottom: "6px",
           }}>
-            UX ENGINEER
+            PRODUCT DESIGNER
           </h1>
           <p style={{
             fontFamily: "'Space Mono', monospace",
@@ -189,7 +215,7 @@ export default function UXEngineerSkills() {
             color: "#404060",
             letterSpacing: "0.1em",
           }}>
-            — CAPABILITY MATRIX v2.6
+            — CAPABILITY MATRIX 
           </p>
         </div>
 
@@ -269,8 +295,8 @@ export default function UXEngineerSkills() {
           justifyContent: "space-between",
           alignItems: "center",
         }}>
-          <span style={{ fontFamily: "'Space Mono', monospace", fontSize: "8px", color: "#252535", letterSpacing: "0.15em" }}>
-            LAST_UPDATED: 2026.02
+          <span style={{ fontFamily: "'Space Mono', monospace", fontSize: "8px", color: "#9b9bc1", letterSpacing: "0.15em" }}>
+            OPEN TO OPPORTUNITIES
           </span>
           <div style={{ display: "flex", gap: "5px" }}>
             {["#00FFB2", "#BF5FFF", "#5FA8FF", "#FF5FA0", "#FFB800", "#FF6B35"].map((c, i) => (

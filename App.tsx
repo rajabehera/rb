@@ -16,7 +16,7 @@ import Testimonials from './components/Testimonials';
 const Footer = ({ onTrigger404 }: { onTrigger404: () => void }) => (
   <div className="w-full py-8 text-center bg-white dark:bg-black border-t border-black/5 dark:border-white/5 z-40 relative transition-colors">
      <p className="text-[10px] md:text-xs font-mono text-gray-500 tracking-[0.2em] uppercase">
-       © {new Date().getFullYear()} Raja Behera <span className="mx-2">|</span> UX Engineer <span className="mx-2">|</span> 
+       © {new Date().getFullYear()} Raja Behera <span className="mx-2">|</span> Sr. Product Designer <span className="mx-2">|</span> 
        <button onClick={onTrigger404} className="hover:text-neon-green transition-colors cursor-pointer">GhostLink</button>
      </p>
   </div>

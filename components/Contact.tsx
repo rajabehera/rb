@@ -29,7 +29,8 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
         </a>
 
         <div className="mt-16 flex justify-center gap-8">
-           <a href="#" className="text-gray-400 hover:text-neon-green transition-colors"><Linkedin className="w-6 h-6" /></a>
+           <a href="https://www.linkedin.com/in/raja-behera/" className="text-gray-400 hover:text-neon-green transition-colors"><Linkedin className="w-6 h-6" /></a>
+           <a href="https://github.com/rajabehera" className="text-gray-400 hover:text-neon-green transition-colors"><Github className="w-6 h-6" /></a>
         </div>
             </div>
           </Reveal>

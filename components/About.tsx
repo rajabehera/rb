@@ -99,7 +99,8 @@ const About: React.FC<AboutProps> = ({ id }) => {
       <div className="w-full md:w-1/2 space-y-8">
         <Reveal>
           <h2 className="text-5xl md:text-6xl font-display font-bold text-gray-900 dark:text-white leading-none transition-colors">
-            THE <br />
+            PRODUCT
+ <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-neon-purple">
               ARCHITECT
             </span>
@@ -109,43 +110,41 @@ const About: React.FC<AboutProps> = ({ id }) => {
         <Reveal delay={200}>
           <div className="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed font-light transition-colors">
             <p>
-              I exist at the intersection of <span className="text-gray-900 dark:text-white font-semibold">logic</span> and <span className="text-gray-900 dark:text-white font-semibold">imagination</span>. As a UX Engineer, I don't just design interfaces; I engineer interactions that feel inevitable.
+              With 8+ years of experience designing and building digital products, I combine UX strategy, interaction design, and frontend engineering to create scalable enterprise experiences. My strength lies in bridging business goals, user needs, and technical feasibility.
             </p>
             <p>
-              My background combines rigorous computer science fundamentals with an obsession for aesthetic perfection. I believe that code is the ultimate design tool, allowing us to break free from the constraints of static mockups.
+             Throughout my career, I've collaborated with cross-functional teams to transform complex workflows into intuitive products across healthcare, education, enterprise SaaS, and e-commerce. From research and wireframes to production-ready implementation, I focus on creating experiences that are both usable and measurable..
             </p>
              <p>
-              Here are a few technologies I've been working with recently:
-            </p>
+Core Expertise            </p>
             <ul className="grid grid-cols-2 gap-2 font-mono text-sm">
-              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> JavaScript (ES6+)</li>
-              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> TypeScript</li>
-              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> React JS</li>
-              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> Tailwind CSS</li>
-              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> Node JS</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> UX Research</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> Interaction Design</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> Design Systems</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> Information Architecture</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> Accessibility</li>
               <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> Figma</li>
-              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> Express JS</li>
-              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> Github</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> React</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">▹</span> Design QA</li>
             </ul>
           </div>
         </Reveal>
+{/* UX Research
 
-        <Reveal delay={400}>
-          <div className="pt-8 grid grid-cols-2 gap-8 border-t border-black/10 dark:border-white/10 transition-colors">
-            <div>
-              <span className="block text-4xl font-display font-bold text-gray-900 dark:text-white mb-2 transition-colors">
-                <CountUp end={8} suffix="+" />
-              </span>
-              <span className="text-sm text-gray-500 uppercase tracking-widest">Years Experience</span>
-            </div>
-            <div>
-              <span className="block text-4xl font-display font-bold text-gray-900 dark:text-white mb-2 transition-colors">
-                <CountUp end={30} suffix="+" />
-              </span>
-              <span className="text-sm text-gray-500 uppercase tracking-widest">Projects Shipped</span>
-            </div>
-          </div>
-        </Reveal>
+Interaction Design
+
+Design Systems
+
+Information Architecture
+
+Figma
+
+Accessibility
+
+React
+
+Design QA */}
+     
       </div>
 
       {/* Right Column: Photo & Skills */}

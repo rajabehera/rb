@@ -13,8 +13,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
   const navLinks = [
     { name: 'Home', id: 'home' },
-    { name: 'Work', id: 'work' },
-    { name: 'Process', id: 'process' },
+    { name: 'CASE STUDIES', id: 'work' },
+    { name: 'DESIGN PROCESS', id: 'process' },
     { name: 'About', id: 'about' },
     { name: 'Contact', id: 'contact' },
   ];
@@ -78,12 +78,12 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
       {/* Mobile Menu Controls */}
       <div className="flex md:hidden items-center gap-4">
-        <button 
+        {/* <button 
             onClick={toggleTheme}
             className="p-2 text-gray-500 dark:text-gray-400"
           >
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-        </button>
+        </button> */}
         <button 
           className="text-gray-900 dark:text-white hover:text-neon-green transition-colors"
           onClick={() => setIsOpen(!isOpen)}
